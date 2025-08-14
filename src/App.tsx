@@ -10,6 +10,7 @@ import {
   Button,
   LinearProgress,
 } from "@mui/material";
+import Footer from "./components/footer";
 
 type Question = {
   question: string;
@@ -101,6 +102,7 @@ export default function App() {
   }
 
   return (
+    <>
     <Container maxWidth="sm" sx={{ mt: 5 }}>
       {/* Progress bar */}
       <LinearProgress
@@ -143,6 +145,8 @@ export default function App() {
           </Button>
         </CardContent>
       </Card>
+          <Footer />
     </Container>
+  </>
   );
 }
