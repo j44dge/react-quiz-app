@@ -12,6 +12,7 @@ import {
 } from "@mui/material";
 import Footer from "./components/footer";
 
+
 type Question = {
   question: string;
   options: string[];
@@ -101,14 +102,15 @@ export default function App() {
     );
   }
 
+
   return (
     <>
-    <Container maxWidth="sm" sx={{ mt: 5 }}>
+      {/* Full width AppBar */}
       {/* Progress bar */}
       <LinearProgress
         variant="determinate"
         value={((currentQuestion + 1) / questions.length) * 100}
-        sx={{ mb: 2, height: 10, borderRadius: 5 }}
+        sx={{ mb: 2, height: 10, borderRadius: 5, marginTop: 5 }}
       />
 
       <Card>
@@ -145,8 +147,8 @@ export default function App() {
           </Button>
         </CardContent>
       </Card>
-          <Footer />
-    </Container>
-  </>
+
+      <Footer />
+    </>
   );
 }
