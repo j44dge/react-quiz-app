@@ -1,6 +1,6 @@
 
 using Microsoft.EntityFrameworkCore;
-using MyApp.Api.Data;
+using Backend.DBModels;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
